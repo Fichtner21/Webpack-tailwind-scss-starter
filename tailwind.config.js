@@ -28,6 +28,12 @@ module.exports = {
       indigo: colors.indigo,
       purple: colors.violet,
       pink: colors.pink,
+      primary: '#1c1423',
+      secondary: '#24292F',
+      menu: '#191b1e',   
+      blu: '#0970c7',
+      mywhite: '#dadadb', 
+      newblue: '#1685e4'  
     },
     spacing: {
       px: "1px",
@@ -142,6 +148,7 @@ module.exports = {
       "2xl": "0 25px 50px -12px rgba(0, 0, 0, 0.25)",
       inner: "inset 0 2px 4px 0 rgba(0, 0, 0, 0.06)",
       none: "none",
+      blue: "0 3px 8px 3px rgba(22, 133, 228, 0.4)"
     },
     container: {},
     cursor: {
@@ -206,6 +213,7 @@ module.exports = {
         '"Courier New"',
         "monospace",
       ],
+      rajdhani: ['rajdhani', 'sans-serif'],
     },
     fontSize: {
       xs: ["0.75rem", { lineHeight: "1rem" }],

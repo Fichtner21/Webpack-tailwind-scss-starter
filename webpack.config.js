@@ -8,6 +8,7 @@ module.exports = {
     index: path.resolve(__dirname, "src", "js", "script.js"),
   },
   output: {
+    publicPath: '',
     path: path.resolve(__dirname, "dist"),
     filename: "js/script.bundle.js",
   },
@@ -20,15 +21,15 @@ module.exports = {
   module: {
     rules: [
       {
-        test: /\.(png|jpe?g|gif)$/i,
+        test: /\.(png|jpe?g|gif|svg)$/i,            
         use: [
           {
-            loader: "file-loader",
+            loader: "file-loader",            
             options: {
-              name: "images/[name].[ext]",
-            },
+              name: "images/[name].[ext]",             
+            },            
           },
-        ],
+        ],        
       },
       {
         test: /\.html$/,
@@ -108,5 +109,6 @@ module.exports = {
     }),
     new MiniCssExtractPlugin({ filename: "css/style.css" }),
     new webpack.HotModuleReplacementPlugin(),
-  ],
+    //new CopyWebpackPlugin([{ from: './src/images', to: 'images' }]),
+  ],  
 };
