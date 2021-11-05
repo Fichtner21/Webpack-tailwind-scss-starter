@@ -21,10 +21,10 @@ module.exports = {
   module: {
     rules: [
       {
-        test: /\.(png|jpe?g|gif|svg)$/i,            
+        test: /\.(png|jpe?g|gif|svg)$/i,                  
         use: [
           {
-            loader: "file-loader",            
+            loader: "url-loader",            
             options: {
               name: "images/[name].[ext]",             
             },            
@@ -36,22 +36,22 @@ module.exports = {
         use: [
           {
             loader: "html-loader",
-            options: {
-              attributes: {
-                list: [
-                  {
-                    tag: "img",
-                    attribute: "data-src",
-                    type: "src",
-                  },
-                  {
-                    tag: "img",
-                    attribute: "data-srcset",
-                    type: "srcset",
-                  },
-                ],
-              },
-            },
+            // options: {
+            //   attributes: {
+            //     list: [
+            //       {
+            //         tag: "img",
+            //         attribute: "data-src",
+            //         type: "src",
+            //       },
+            //       {
+            //         tag: "img",
+            //         attribute: "data-srcset",
+            //         type: "srcset",
+            //       },
+            //     ],
+            //   },
+            // },
           },
         ],
       },     

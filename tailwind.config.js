@@ -28,12 +28,16 @@ module.exports = {
       indigo: colors.indigo,
       purple: colors.violet,
       pink: colors.pink,
-      primary: '#1c1423',
+      primary: '#1D1F23',
       secondary: '#24292F',
       menu: '#191b1e',   
       blu: '#0970c7',
       mywhite: '#dadadb', 
-      newblue: '#1685e4'  
+      newblue: '#1685e4',
+      black2: '#0d0d0d',
+      black3: '#1a1a1a',
+      black4: '#262626',
+      black5: '#333'  
     },
     spacing: {
       px: "1px",
@@ -71,6 +75,7 @@ module.exports = {
       72: "18rem",
       80: "20rem",
       96: "24rem",
+      128: "32rem",
     },
     animation: {
       none: "none",
@@ -163,6 +168,9 @@ module.exports = {
     divideColor: (theme) => theme("borderColor"),
     divideOpacity: (theme) => theme("borderOpacity"),
     divideWidth: (theme) => theme("borderWidth"),
+    dropShadow: {
+      "blue": "0 3px 8px 3px rgba(22, 133, 228, 0.4)"
+    },
     fill: { current: "currentColor" },
     flex: {
       1: "1 1 0%",
@@ -226,7 +234,7 @@ module.exports = {
       "4xl": ["2.25rem", { lineHeight: "2.5rem" }],
       "5xl": ["3rem", { lineHeight: "1" }],
       "6xl": ["3.75rem", { lineHeight: "1" }],
-      "7xl": ["4.5rem", { lineHeight: "1" }],
+      "7xl": ["4.5rem", { lineHeight: "1.125" }],
       "8xl": ["6rem", { lineHeight: "1" }],
       "9xl": ["8rem", { lineHeight: "1" }],
     },

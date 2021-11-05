@@ -2,12 +2,13 @@ html {
   scroll-behavior: smooth; 
 }
 
-section {
-  height: 500px;
-}
+// section {
+//   height: 500px;
+// }
 
-.code10 {
-  background-image: url('../images/code10.png');
-  width: 100px;
-  height: 100px;
+.code10img {
+  background-image: url(../images/code10.png);
+  width: 100%;
+  height: auto;
+  background-size: cover;
 }
