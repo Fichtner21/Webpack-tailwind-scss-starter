@@ -107,6 +107,10 @@ module.exports = {
     new HtmlWebpackPlugin({
       template: "src/index.html",
     }),
+    new HtmlWebpackPlugin({
+      filename: "page.html",
+      template: "src/page.html",
+    }),
     new MiniCssExtractPlugin({ filename: "css/style.css" }),
     new webpack.HotModuleReplacementPlugin(),
     //new CopyWebpackPlugin([{ from: './src/images', to: 'images' }]),

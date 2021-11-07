@@ -34,6 +34,7 @@
     "webpack-dev-server": "^3.11.0"
   },
   "dependencies": {
+    "aos": "^2.3.4",
     "copy-webpack-plugin": "^9.0.1",
     "url-loader": "^4.1.1"
   }

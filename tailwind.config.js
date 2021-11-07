@@ -230,6 +230,7 @@ module.exports = {
       lg: ["1.125rem", { lineHeight: "1.75rem" }],
       xl: ["1.25rem", { lineHeight: "1.75rem" }],
       "2xl": ["1.5rem", { lineHeight: "2rem" }],
+      "28": ["1.75rem", { lineHeight: "2.5rem"}],
       "3xl": ["1.875rem", { lineHeight: "2.25rem" }],
       "4xl": ["2.25rem", { lineHeight: "2.5rem" }],
       "5xl": ["3rem", { lineHeight: "1" }],
@@ -237,6 +238,7 @@ module.exports = {
       "7xl": ["4.5rem", { lineHeight: "1.125" }],
       "8xl": ["6rem", { lineHeight: "1" }],
       "9xl": ["8rem", { lineHeight: "1" }],
+      "10xl": ["12.5rem", { lineHeight: "0.6em"}],
     },
     fontWeight: {
       thin: "100",
@@ -396,6 +398,7 @@ module.exports = {
       "5/6": "83.333333%",
       full: "100%",
       screen: "100vh",
+      "285px": "17.8125rem",
     }),
     inset: (theme, { negative }) => ({
       auto: "auto",
@@ -467,6 +470,7 @@ module.exports = {
       8: "2rem",
       9: "2.25rem",
       10: "2.5rem",
+      06: "0.6em",
     },
     listStyleType: {
       none: "none",
@@ -493,6 +497,7 @@ module.exports = {
       xl: "36rem",
       "2xl": "42rem",
       "3xl": "48rem",
+      "800": "50rem",
       "4xl": "56rem",
       "5xl": "64rem",
       "6xl": "72rem",

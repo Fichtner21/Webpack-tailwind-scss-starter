@@ -4,8 +4,15 @@ import page from "../page.html";
 
 import * as MyFn from "../js/home";
 
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+
 import "../css/style.css";
 import "../css/style.scss";
+
+AOS.init({
+  once: true
+});
 
 const links = document.querySelectorAll(".link");
 
