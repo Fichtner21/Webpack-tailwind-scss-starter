@@ -17,18 +17,19 @@ AOS.init({
 const links = document.querySelectorAll(".link");
 
 for (const link of links) {
-  link.addEventListener("click", clickHandler);
-}
-
-function clickHandler(e) {
-  e.preventDefault();
-  const href = this.getAttribute("href");
-  const offsetTop = document.querySelector(href).offsetTop;
-
-  scroll({
-    top: offsetTop,
-    behavior: "smooth"
-  });
+  link.onclick = function clickHandler(e) {
+    e.preventDefault()
+    const href = this.getAttribute('href')
+    document.querySelector(href).scrollIntoView({ behavior: 'smooth' })
+  }
 }
 
 MyFn.showHome();
+
+// mobile menu
+const btn = document.querySelector("button.mobile-menu-button");
+const menu = document.querySelector(".mobile-menu");
+
+btn.addEventListener("click", () => {
+  menu.classList.toggle("hidden");
+});

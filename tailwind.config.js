@@ -13,6 +13,7 @@ module.exports = {
       lg: "1024px",
       xl: "1280px",
       "2xl": "1536px",
+      "3xl": "1700px",
     },
     colors: {
       transparent: "transparent",
@@ -34,10 +35,10 @@ module.exports = {
       blu: '#0970c7',
       mywhite: '#dadadb', 
       newblue: '#1685e4',
-      black2: '#0d0d0d',
-      black3: '#1a1a1a',
-      black4: '#262626',
-      black5: '#333'  
+      black2: '#080808',
+      black3: '#0f0f0f',
+      black4: '#171717',
+      black5: '#1f1f1f'  
     },
     spacing: {
       px: "1px",
@@ -153,7 +154,10 @@ module.exports = {
       "2xl": "0 25px 50px -12px rgba(0, 0, 0, 0.25)",
       inner: "inset 0 2px 4px 0 rgba(0, 0, 0, 0.06)",
       none: "none",
-      blue: "0 3px 8px 3px rgba(22, 133, 228, 0.4)"
+      // blue: "0 3px 8px 3px rgba(22, 133, 228, 0.4)"
+      blue: "0 0px 10px 0px rgba(22, 133, 228, 0.4), 0 0px 10px 10px rgba(22, 133, 228, 0.4)",
+      "2xl": "0 25px 50px -12px rgba(22, 133, 228, 0.4)",
+      btn: "0 0 24px 0 rgba(22,133,228,0.4)"
     },
     container: {},
     cursor: {
@@ -238,6 +242,7 @@ module.exports = {
       "7xl": ["4.5rem", { lineHeight: "1.125" }],
       "8xl": ["6rem", { lineHeight: "1" }],
       "9xl": ["8rem", { lineHeight: "1" }],
+      "9xlmy": ["8rem", {lineHeight: "0.6"}],
       "10xl": ["12.5rem", { lineHeight: "0.6em"}],
     },
     fontWeight: {
@@ -490,6 +495,8 @@ module.exports = {
     maxWidth: (theme, { breakpoints }) => ({
       none: "none",
       0: "0rem",
+      "104": "6.5rem",
+      "256": "16rem",
       xs: "20rem",
       sm: "24rem",
       md: "28rem",
