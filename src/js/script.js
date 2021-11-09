@@ -33,3 +33,30 @@ const menu = document.querySelector(".mobile-menu");
 btn.addEventListener("click", () => {
   menu.classList.toggle("hidden");  
 });
+
+// sticky menu desktop
+
+const header = document.getElementById('header-menu');
+
+function addClassHeader() {
+  header.classList.add("fixed", "top-0");
+  header.classList.remove("relative");
+}
+
+function removeClassHeader(){
+  header.classList.remove("fixed", "top-0");
+  header.classList.add("relative");
+}
+
+window.addEventListener('scroll', function(){
+  let getScrollposition = window.scrollY;
+  const mediaQuery = window.matchMedia('(min-width: 1024px)');
+
+  if(mediaQuery.matches){
+    if(getScrollposition > 50){
+      addClassHeader();
+    } else {
+      removeClassHeader();
+    }
+  }   
+});

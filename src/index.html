@@ -29,7 +29,7 @@
           </a>
         </div>         
       </div>      
-      <nav class="bg-menu relative">
+      <nav class="bg-menu relative z-20 min-w-full" id="header-menu">
         <div class="px-8">
           <div class="flex justify-between py-7">
             <div class="flex">
@@ -93,7 +93,7 @@
         </div>
         <!-- mobile menu -->
         <div class="hidden mobile-menu">
-          <ul class="px-8 text-right pb-4 absolute top-24 bg-menu min-w-full z-10">
+          <ul class="px-8 text-center pb-4 absolute top-24 bg-menu min-w-full z-10">
             <li class="py-2">
               <a href="#section_what" class="link text-mywhite font-semibold antialiased text-lg hover:text-newblue transition duration-300">What's in if for me?</a>
             </li>
@@ -122,20 +122,20 @@
         
       </nav>
       <div class="container mx-auto px-8 flex py-16 md:py-20 lg:py-28 relative">
-        <div class="max-w-3xl w-3/5">
-          <div class="text-3xl md:text-5xl lg:text-7xl text-mywhite font-semibold antialiased mb-16">
+        <div class="w-4/5 sm:max-w-3xl sm:w-3/5 z-10">
+          <h1 class="text-3xl md:text-5xl lg:text-7xl text-mywhite font-semibold antialiased mb-16">
             From <span class="text-newblue">software engineers</span> to <span class="text-newblue">software engineers</span>
-          </div>
-          <div class="max-w-lg text-mywhite text-3xl leading-10 mb-16">
+          </h1>
+          <h3 class="max-w-lg text-mywhite text-2xl sm:text-3xl leading-10 mb-16">
             Share your code, get tips on how to make it better and learn from the experience. <span class="text-mywhite font-bold">It's that simple.</span>
-          </div>
+          </h3>
           <div class="absolute left-8 bottom-16 sm:static">
             <a href="/" class="transition duration-300 ease-in-out bg-blu text-mywhite antialiased text-lg px-8 lg:px-12 py-4 lg:py-5 rounded font-semibold shadow-btn hover:shadow-xl">
               Improve your code in one day            
             </a>
           </div>
         </div>
-        <div class="code10 w-2/5">
+        <div class="code10 w-3/5 sm:w-2/5 absolute right-0 sm:static">
           <div class="code10img"></div>
           <img src="../src/images/code10mod2.png">
         </div>
@@ -143,7 +143,7 @@
     </section>
     <section class="bg-secondary relative" id="section_what">
       <div class="container mx-auto px-8 pt-28 pb-36 xl:pb-80 3xl:pb-128">
-        <div class="flex justify-center text-mywhite text-5xl font-semibold mb-20">What's in it for me?</div>
+        <h2 class="flex justify-center text-mywhite text-5xl font-semibold mb-20">What's in it for me?</h2>
         <div class="flex justify-center">
           <div class="text-mywhite text-3xl mb-16">Using <span class="text-newblue font-bold"> CodeReview.sh </span> you gain:</div>
         </div>
@@ -194,25 +194,25 @@
     </section>
     <section class="bg-primary" id="section_how">
       <div class="container mx-auto px-8 pt-36 sm:pt-48 md:pt-72 lg:pt-96 xl:pt-72 pb-28">
-        <div class="text-center text-mywhite text-5xl font-semibold mb-20">How it works?</div>
+        <h2 class="text-center text-mywhite text-5xl font-semibold mb-20">How it works?</h2>
         <div class="grid grid-cols-2 md:grid-cols-3 md:grid-cols-5 mb-24">
-          <div class="px-4 lg:px-8 pt-8 text-lg lg:text-2xl bg-black h-285px relative">
+          <div class="px-4 lg:px-8 pt-8 text-lg lg:text-2xl bg-black h-285px relative" data-aos="fade-up" data-aos-delay="100">
             <div class="pb-12 text-mywhite">Login through <br><span class="fill-current text-newblue"><i class="fab fa-github"></i></span> <span class="text-newblue font-bold">Github</span></div>
             <div class="text-9xlmy xl:text-10xl text-newblue font-bold filter drop-shadow-blue absolute bottom-0 left-4 lg:left-8 text-neon">1</div>
           </div>
-          <div class="bg-black2 px-4 lg:px-8 pt-8 text-lg lg:text-2xl h-285px relative">
+          <div class="bg-black2 px-4 lg:px-8 pt-8 text-lg lg:text-2xl h-285px relative" data-aos="fade-up" data-aos-delay="300">
             <div class="pb-12 text-mywhite">Share your code <br>for review</div>
             <div class="text-9xlmy xl:text-10xl text-newblue font-bold filter drop-shadow-blue absolute bottom-0 left-4 lg:left-8 text-neon">2</div>
           </div>
-          <div class="bg-black3 px-4 lg:px-8 pt-8 text-lg lg:text-2xl h-285px relative">
-            <div class="pb-12 text-mywhite">Wait <span class="text-newblue font-bold"> <24 hours</span><br> to finde a mentor</div>
+          <div class="bg-black3 px-4 lg:px-8 pt-8 text-lg lg:text-2xl h-285px relative" data-aos="fade-up" data-aos-delay="500">
+            <div class="pb-12 text-mywhite">Wait <span class="text-newblue font-bold"> &lt;24 hours</span><br> to finde a mentor</div>
             <div class="text-9xlmy xl:text-10xl text-newblue font-bold filter drop-shadow-blue absolute bottom-0 left-4 lg:left-8 text-neon">3</div>
           </div>
-          <div class="bg-black4 px-4 lg:px-8 pt-8 text-lg lg:text-2xl h-285px relative">
+          <div class="bg-black4 px-4 lg:px-8 pt-8 text-lg lg:text-2xl h-285px relative" data-aos="fade-up" data-aos-delay="700">
             <div class="pb-12 text-mywhite">Receive code <br> review with <br>comments</div>
             <div class="text-9xlmy xl:text-10xl text-newblue font-bold filter drop-shadow-blue absolute bottom-0 left-4 lg:left-8 text-neon">4</div>
           </div>
-          <div class="col-span-2 md:col-span-1 bg-black5 px-4 lg:px-8 pt-8 text-lg lg:text-2xl h-285px relative">
+          <div class="col-span-2 md:col-span-1 bg-black5 px-4 lg:px-8 pt-8 text-lg lg:text-2xl h-285px relative" data-aos="fade-up" data-aos-delay="900">
             <div class="pb-12 text-mywhite">Learn and <br> upskill with <br><span class="text-newblue font-bold"> Codereview.sh</span></div>
               <div class="text-9xlmy xl:text-10xl text-newblue font-bold filter drop-shadow-blue absolute bottom-0 left-4 lg:left-8 text-neon">5</div>
           </div>
@@ -222,7 +222,7 @@
     </section>
     <section class="bg-secondary relative" id="">
       <div class="container mx-auto px-8 pt-28 pb-28 sm:pb-44 md:pb-56 lg:pb-80 xl:pb-96 3xl:pb-128">
-        <div class="text-5xl text-mywhite font-semibold text-center mb-20">Our Mission</div>
+        <h2 class="text-5xl text-mywhite font-semibold text-center mb-20">Our Mission</h2>
         <div class="text-center text-28 text-mywhite max-w-800 mx-auto leading-10">
           <div class="mb-16">
             To build a place where engineers and developers can improve skills, share knowledge and find mentors that can support their development.
@@ -231,7 +231,7 @@
           </div>
         </div>
         <div class="text-center pb-24">
-          <a href="/" class="transition duration-300 ease-in-out bg-blu text-mywhite antialiased text-lg px-12 py-5 rounded font-semibold shadow-btn hover:shadow-xl">Share your code and upskill</a>
+          <a href="/" class="transition duration-300 ease-in-out bg-blu text-mywhite antialiased text-lg px-4 md:px-12 py-5 rounded font-semibold shadow-btn hover:shadow-xl">Share your code and upskill</a>
         </div> 
         <div class="absolute -bottom-18 sm:-bottom-36 left-0 mx-auto flex justify-center w-full" data-aos="fade-up">
           <img src="./images/cr3.jpg" class="shadow-blue rounded-3xl w-9/12 xl:w-7/12">
@@ -240,7 +240,7 @@
     </section>
     <section class="bg-primary" id="section_stack">
       <div class="container mx-auto px-8 pt-44 sm:pt-52 md:pt-72 pb-28">
-        <div class="text-5xl text-mywhite font-semibold text-center mb-20">Technology stack</div>
+        <h2 class="text-5xl text-mywhite font-semibold text-center mb-20">Technology stack</h2>
         <div class="text-center text-28 text-mywhite max-w-800 mx-auto leading-10 mb-16">          
           For now we support code review of these programming languages                 
         </div>
@@ -273,8 +273,8 @@
       </div>
     </section>
     <section class="bg-secondary relative" id="section_pricing">
-      <div class="container mx-auto px-8 pt-28 pb-40 sm:pb-52 md:pb-72 lg:pb-96 3xl:pb-128">
-        <div class="text-5xl text-mywhite font-semibold text-center mb-20">Pricing</div>
+      <div class="container mx-auto px-8 pt-28 pb-32 sm:pb-52 md:pb-72 lg:pb-96 3xl:pb-128">
+        <h2 class="text-5xl text-mywhite font-semibold text-center mb-20">Pricing</h2>
         <div class="text-center text-28 text-mywhite max-w-800 mx-auto leading-10">
           <div class="mb-16">
             We are getting started, focusing on validating and improving our platform in early access, so <span class="text-newblue font-bold">for now it's totally free!</span>
@@ -282,14 +282,14 @@
           <div class="mb-20 text-xl">So don't hold your back, join our community and explore the platform by either asking for review or giving one in your favorite tech stack!
           </div>
         </div>        
-        <div class="absolute -bottom-18 sm:-bottom-36 left-0 mx-auto flex justify-center w-full" data-aos="fade-up">
+        <div class="absolute -bottom-12 sm:-bottom-36 left-0 mx-auto flex justify-center w-full" data-aos="fade-up">
           <img src="./images/cr1.jpg" class="shadow-blue rounded-3xl w-9/12 xl:w-7/12">
         </div>       
       </div>
     </section>
     <section class="bg-primary" id="section_security">
       <div class="container mx-auto px-8 pt-40 sm:pt-72 pb-28">
-        <div class="text-5xl text-mywhite font-semibold text-center mb-20">Security</div>
+        <h2 class="text-5xl text-mywhite font-semibold text-center mb-20">Security</h2>
         <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-16 md:gap-8">
           <div class="max-w-xs mx-auto md:max-w-none">
             <svg class="mx-auto fill-current text-newblue h-28 drop-blueshadow mb-4 md:mb-16" viewBox="0 0 128 115" xmlns="http://www.w3.org/2000/svg"><g fill="#1685E4" fill-rule="nonzero"><path d="M101.193 114.7a2.04 2.04 0 0 1-1.488-.644l-17.58-18.727a28.309 28.309 0 0 1-6.085-9.655 26.41 26.41 0 0 1-1.604-10.895 27.998 27.998 0 0 1 8.085-17.908c4.98-4.997 11.611-7.75 18.672-7.75 7.06 0 13.69 2.753 18.672 7.75a27.993 27.993 0 0 1 8.082 17.9 26.41 26.41 0 0 1-1.598 10.89 28.373 28.373 0 0 1-6.104 9.684l-17.565 18.71a2.04 2.04 0 0 1-1.487.646Zm0-61.5c-13.285 0-21.966 11.106-22.685 21.843a22.348 22.348 0 0 0 1.354 9.204 24.297 24.297 0 0 0 5.221 8.275l16.11 17.158 16.093-17.142a24.329 24.329 0 0 0 5.241-8.303 22.362 22.362 0 0 0 1.349-9.2c-.718-10.729-9.399-21.835-22.683-21.835Zm0 34.257c-6.929 0-12.565-5.763-12.565-12.846 0-7.085 5.636-12.848 12.565-12.848 6.927 0 12.563 5.763 12.563 12.848 0 7.083-5.636 12.846-12.563 12.846Zm0-21.614c-4.68 0-8.485 3.933-8.485 8.768 0 4.833 3.807 8.766 8.485 8.766 4.677 0 8.484-3.933 8.484-8.766 0-4.835-3.807-8.768-8.484-8.768Z"/><path d="M79.792 91.103H13.697C6.145 91.103 0 84.958 0 77.406V13.697C0 6.145 6.145 0 13.697 0h75.771c7.554 0 13.697 6.145 13.697 13.697v37.464a2.04 2.04 0 1 1-4.08 0V13.697c0-5.303-4.314-9.617-9.617-9.617H13.697c-5.303 0-9.617 4.314-9.617 9.617v63.709c0 5.302 4.314 9.617 9.617 9.617h66.095a2.04 2.04 0 0 1 0 4.08Z"/><path d="M101.125 27.786H2.04a2.04 2.04 0 0 1 0-4.08h99.085a2.04 2.04 0 1 1 0 4.08ZM29.253 19.69a5.709 5.709 0 0 1-5.702-5.701 5.709 5.709 0 0 1 5.702-5.702 5.708 5.708 0 0 1 5.701 5.702 5.708 5.708 0 0 1-5.701 5.701Zm0-7.323c-.894 0-1.622.728-1.622 1.622 0 .894.728 1.621 1.622 1.621.894 0 1.622-.727 1.622-1.621s-.728-1.622-1.622-1.622ZM12.804 19.639a5.709 5.709 0 0 1-5.701-5.702 5.709 5.709 0 0 1 5.701-5.702 5.709 5.709 0 0 1 5.702 5.702 5.709 5.709 0 0 1-5.702 5.702Zm0-7.324c-.894 0-1.622.728-1.622 1.622 0 .894.728 1.622 1.622 1.622.894 0 1.622-.728 1.622-1.622 0-.895-.728-1.622-1.622-1.622ZM45.702 19.741A5.708 5.708 0 0 1 40 14.04a5.709 5.709 0 0 1 5.702-5.702 5.709 5.709 0 0 1 5.702 5.702 5.708 5.708 0 0 1-5.702 5.701Zm0-7.323c-.894 0-1.622.728-1.622 1.622 0 .894.728 1.622 1.622 1.622.895 0 1.621-.728 1.621-1.622 0-.894-.726-1.622-1.621-1.622Z"/></g></svg>  
@@ -322,14 +322,14 @@
     </section>
     <section class="bg-secondary" id="section_contact">
       <div class="container mx-auto px-8 py-28">
-        <div class="text-5xl text-mywhite font-semibold mb-20">Contact us</div>
-        <div class="grid grid-cols-3 gap-16">
-          <div class="flex justify-end">
+        <h2 class="text-5xl text-mywhite font-semibold mb-20">Contact us</h2>
+        <div class="grid grid-cols-1 sm:grid-cols-3 gap-8 sm:gap-16">
+          <div class="flex sm:justify-end">
             <svg class="max-w-256 fill-current text-newblue drop-blueshadow" viewBox="0 0 256 256" xmlns="http://www.w3.org/2000/svg"><g fill="#1685E4" fill-rule="nonzero"><path d="M238.927 42.662H87.466L77.653 10.2C75.33 2.637 67.353-1.646 59.768.595l-21.73 6.4a14.506 14.506 0 0 0-6.301 3.814L7.256 36.164a14.374 14.374 0 0 0-3.67 6.925c-2.495 11.52-9.386 53.28 6.955 107.302 16.34 54.023 45.225 85.228 53.715 93.5a14.46 14.46 0 0 0 6.882 3.772l34.529 7.966a14.46 14.46 0 0 0 3.255.371c1.392 0 2.777-.2 4.113-.593l12.023-3.546 9.69-2.858a14.254 14.254 0 0 0 8.609-6.95 14.105 14.105 0 0 0 1.105-10.858l-5.406-17.873h99.87c9.426 0 17.067-7.64 17.067-17.066V59.728c0-9.425-7.641-17.066-17.066-17.066Zm-67.198 84.05 75.206-69.825c.338.91.516 1.87.525 2.841v136.528a8.486 8.486 0 0 1-.474 2.684l-75.257-72.228Zm67.198-75.517c.484.007.966.056 1.442.145l-89.332 82.915a8.533 8.533 0 0 1-11.605 0L77.994 77.38l4.527-1.336a14.297 14.297 0 0 0 8.597-6.95 14.08 14.08 0 0 0 1.097-10.85l-2.147-7.048h148.859ZM67.132 175.91a103.83 103.83 0 0 1-19.26-36.593 96.197 96.197 0 0 1-2.17-52.12.764.764 0 0 1 .524-.47l22.216-6.548 50.105 46.368-51.415 49.363Zm68.69 62.082a5.79 5.79 0 0 1-3.498 2.816l-5.658 1.668-10.388-34.38a4.266 4.266 0 1 0-8.167 2.471l10.394 34.328-7.876 2.321c-.99.294-2.04.327-3.047.094l-34.528-7.961a5.973 5.973 0 0 1-2.833-1.562c-8.107-7.914-35.783-37.792-51.514-89.86-15.73-52.069-9.169-92.038-6.784-103.037a5.858 5.858 0 0 1 1.494-2.807L37.872 16.74a5.93 5.93 0 0 1 2.56-1.561l7.94-2.338 10.389 34.375a4.266 4.266 0 0 0 5.316 2.85 4.266 4.266 0 0 0 2.85-5.316l-10.355-34.32 5.606-1.651a5.9 5.9 0 0 1 7.334 3.887l14.507 48.04c.445 1.441.291 3-.427 4.327a5.824 5.824 0 0 1-3.499 2.82l-5.661 1.668-1.677-5.547a4.266 4.266 0 0 0-8.166 2.467l1.66 5.495-22.434 6.613a9.305 9.305 0 0 0-6.344 6.4 104.862 104.862 0 0 0 2.24 56.817 105.882 105.882 0 0 0 29.644 48.723 9.267 9.267 0 0 0 8.81 1.92l22.489-6.63 1.676 5.546a4.266 4.266 0 1 0 8.166-2.47l-1.66-5.495 5.603-1.652a5.918 5.918 0 0 1 7.338 3.887l14.506 48.045c.449 1.45.29 3.02-.44 4.352h-.02Zm.653-33.202-6.536-21.635c-2.327-7.576-10.323-11.861-17.92-9.604l-36.265 10.692a.853.853 0 0 1-.76-.137c-.596-.525-1.279-1.177-2.068-1.92l51.897-49.832 8.806 8.153c6.559 6.047 16.66 6.047 23.219 0l8.618-8.004 75.12 72.104a8.478 8.478 0 0 1-1.66.183h-102.45Z"/><path d="M110.932 68.261h68.264a4.266 4.266 0 0 0 0-8.533h-68.264a4.266 4.266 0 0 0 0 8.533ZM234.66 93.86a4.266 4.266 0 0 0-4.266 4.267v59.73a4.266 4.266 0 0 0 8.533 0v-59.73a4.266 4.266 0 0 0-4.267-4.267Z"/></g></svg>
           </div>
           <div class="col-span-2 text-mywhite max-w-800">
             <div class="text-xl sm:text-28 mb-12">
-              If you have any questions or idea what we can improve call us<br> <span class="font-bold underline text-newblue no-wrap">+48 61 847 40 07</span> or drop us a line via <span class="font-bold underline text-newblue">help@codereview.sh</span>
+              If you have any questions or idea what we can improve call us<br> <span class="font-bold underline text-newblue no-wrap"><a href="tel:+48618474007">+48 61 847 40 07</a></span> or drop us a line via <span class="font-bold underline text-newblue"><a href="mailto:help@codereview.sh">help@codereview.sh</a></span>
             </div>
             <div class="text-xl max-w-xs">
               <div>Codereview.sh belongs to:</div>
