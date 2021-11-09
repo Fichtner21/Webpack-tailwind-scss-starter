@@ -2,6 +2,8 @@ const path = require("path");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const webpack = require("webpack");
+const FaviconsWebpackPlugin = require('favicons-webpack-plugin');
+const { basename } = require("path");
 
 module.exports = {
   entry: {
@@ -112,7 +114,7 @@ module.exports = {
       template: "src/page.html",
     }),
     new MiniCssExtractPlugin({ filename: "css/style.css" }),
-    new webpack.HotModuleReplacementPlugin(),
+    new webpack.HotModuleReplacementPlugin(),   
     //new CopyWebpackPlugin([{ from: './src/images', to: 'images' }]),
   ],  
 };

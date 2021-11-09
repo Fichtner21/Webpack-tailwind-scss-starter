@@ -24,7 +24,7 @@ for (const link of links) {
   }
 }
 
-MyFn.showHome();
+// MyFn.showHome();
 
 // mobile menu
 const btn = document.querySelector("button.mobile-menu-button");
@@ -39,12 +39,12 @@ btn.addEventListener("click", () => {
 const header = document.getElementById('header-menu');
 
 function addClassHeader() {
-  header.classList.add("fixed", "top-0");
+  header.classList.add("fixed-menu");
   header.classList.remove("relative");
 }
 
 function removeClassHeader(){
-  header.classList.remove("fixed", "top-0");
+  header.classList.remove("fixed-menu");
   header.classList.add("relative");
 }
 
