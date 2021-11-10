@@ -40,12 +40,12 @@ const header = document.getElementById('header-menu');
 
 function addClassHeader() {
   header.classList.add("fixed-menu");
-  header.classList.remove("relative");
+  header.classList.remove("relative");  
 }
 
 function removeClassHeader(){
   header.classList.remove("fixed-menu");
-  header.classList.add("relative");
+  header.classList.add("relative");  
 }
 
 window.addEventListener('scroll', function(){
@@ -54,9 +54,31 @@ window.addEventListener('scroll', function(){
 
   if(mediaQuery.matches){
     if(getScrollposition > 50){
-      addClassHeader();
+      addClassHeader();      
     } else {
-      removeClassHeader();
+      removeClassHeader();      
     }
   }   
+});
+
+$(document).ready(function () {
+  $(window).scroll(function (e) {
+    // Our logic here
+    // Detect how far are we from the top of the page
+    let windowTop = $(this).scrollTop();
+    // Loop through every navigation menu item
+    $('#header-menu > div > div > div >  ul > li > a').each(function (event) {
+
+        // Check for the current navigation item associated section
+        // Check how far the associated section is from the top
+        // If the associated section is as far as the user have scrolled, add 'active' class to the item.
+        if (windowTop >= $($(this).attr('href')).offset().top - 500) {
+            // Remove 'active' from previously highlighted menu items
+            $('#header-menu > div > div > div >  ul > li > .active').removeClass('active');
+
+            // Highlight the current menu item by adding 'active' class
+            $(this).addClass('active');
+        }
+    });
+  });
 });
