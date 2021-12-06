@@ -54,9 +54,9 @@ window.addEventListener('scroll', function(){
 
   if(mediaQuery.matches){
     if(getScrollposition > 50){
-      addClassHeader();      
+      addClassHeader(); 
     } else {
-      removeClassHeader();      
+      removeClassHeader();          
     }
   }   
 });

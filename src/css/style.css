@@ -1,6 +1,6 @@
 @tailwind base;
 @tailwind components;
 body {
-  @apply bg-red-200;
+  @apply bg-primary;
 }
 @tailwind utilities;

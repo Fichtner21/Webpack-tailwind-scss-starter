@@ -4,6 +4,10 @@ html {
   scroll-behavior: smooth; 
 }
 
+body {
+  transition: all .3s;
+}
+
 .code10img {
   background-image: url(../images/code10.png);
   width: 100%;
